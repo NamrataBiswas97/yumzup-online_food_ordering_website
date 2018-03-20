@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style>
+#grad1 {
+    height: 500px;
+    background: white;
+}
+h1
+{
+color:#a30f2d;
+text-align:center;
+font-style:oblique;
+font-weight:bold;
+font-size:40px;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e6e6e6;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 100px;
+    display: none;
+}
+</style>
+</head>
+<body id="grad1">
+<h1>VIEW REVIEWS</h1> 
+<h2>
+<div id="flip"><a href="HH_view_reviews.php">Click to see reviews</a></div>
+<div id="panel">
+<!--<ul type="none"><li>Very good service.Amazing Food!!</li>
+<br>
+<br>
+<li>Excellent Food!</li></ul>
+-->
+    
+</div>
+</h2>
+</body>
+</html>
+

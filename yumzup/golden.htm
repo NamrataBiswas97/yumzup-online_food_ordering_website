@@ -1,0 +1,89 @@
+﻿
+<html>
+
+
+
+
+<style type="text/css">
+
+.bottomleft
+{
+width:100%;
+font-size:24pt;
+position:absolute;
+bottom:0px;
+left:0px;
+color:white;
+background-color:#a30f2d;
+opacity:0.8;
+}
+.top
+{
+background-color:grey;
+height:20%;
+opacity:0.4;
+}
+.topright
+{
+position:absolute;
+top:50%;
+right: 16px;}
+.topleft
+{position:absolute;
+top:50%;
+left: 16px;
+}
+.b{
+height:100%; 
+width:100%;
+margin:auto;
+}
+input[type=button]
+{
+background-color: black;
+border:0px;
+color:white;
+font-size:48px;
+border-radius:100%;
+font-weight:bolder;
+}
+img
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+</style>
+<head>
+
+<div class="b">
+<img id='d' src="g1.jpg">
+<div class="topleft">
+<input type=button onclick="b()" value="<"/>
+</div>
+<div class="topright">
+<input type=button onclick="a()" value=">">
+</div>
+<div class="bottomleft">
+Golden Temple</div>
+</div></div></body>
+<script type="text/javascript">
+var t=0;
+var text='{"url":["g1.jpg","g2.jpg","g3.jpg"]}'
+var obj=JSON.parse(text);
+function a (){
+t=t+1;
+if(t==3)
+t=2;
+else
+document.getElementById("d").src=obj.url[t];
+}
+function b(){
+t=t-1;
+if(t==-1)
+t=0;
+document.getElementById("d").src=obj.url[t];
+}
+</script>
+</head>
+</html>

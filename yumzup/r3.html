@@ -1,0 +1,47 @@
+<style>
+.box{
+    width:150px; 
+    height:150px;
+    color: yellow;
+    background: url("1474477893699801.jpg") center ;
+    font-size: 25px;
+    object-fit: contain;
+    margin:10px;
+    position: relative;
+    border-radius: 200px;
+    float: right;
+    -moz-animation: 3s ease 0s normal none infinite swing;
+    -moz-transform-origin: center top;
+    -webkit-animation:swing 3s infinite ease-in-out;
+    -webkit-transform-origin:top;
+    -ms-animation:swing 3s infinite ease-in-out;
+    -ms-transform-origin:top;
+}
+
+.box:hover{
+    color: blue;
+    background: url("1474477893699791.jpg") center ;
+}
+
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-5deg)}
+    50%{-moz-transform:rotate(5deg)}
+    100%{-moz-transform:rotate(-5deg)}
+}
+@-webkit-keyframes swing{
+    0%{-webkit-transform:rotate(-5deg)}
+    50%{-webkit-transform:rotate(5deg)}
+    100%{-webkit-transform:rotate(-5deg)}
+}
+@-ms-keyframes swing{
+    0%{-ms-transform:rotate(-5deg)}
+    50%{-ms-transform:rotate(5deg)}
+    100%{-ms-transform:rotate(-5deg)}
+
+</style>
+
+
+<div>
+<button class="box"><b>Login</b></button>
+<button class="box"><b>SignUp</b></button>
+</div>

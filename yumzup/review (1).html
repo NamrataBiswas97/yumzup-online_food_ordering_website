@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+	color:white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+	background-color:black;
+}
+
+input[type=submit] {
+    width: 60%;
+    background-color: #A30F2D;
+	text-align:right;
+    color: white;
+	font-size:20px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #A30F2D;
+}
+
+div {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+#btnControl {
+    display: none;
+}
+
+#btnControl:checked + label > img {
+    width: 70px;
+    height: 74px;
+}
+
+</style>
+<body>
+
+<h3>WRITE REVIEW:</h3>
+<img src="note-writing.jpg" alt="notes" style="width:304px;height:228px;" align="center">
+
+<div>
+  <form action="action_page.php">
+    <label for="review">YOUR REVIEW:</label>
+	<br>
+    <textarea name="Text1" border-radius="10px" cols="108" rows="5"> </textarea>
+	<br>
+	<label for="star">STAR RATING:</label>
+	<br>
+    <select id="star" name="star">
+      <option value="1star"> &#9733 </option>
+      <option value="2star"> &#9733&#9733 </option>
+      <option value="3star"> &#9733&#9733&#9733 </option>
+	  <option value="4star"> &#9733&#9733&#9733&#9733 </option>
+	  <option value="5star"> &#9733&#9733&#9733&#9733&#9733 </option>
+    </select>
+	<br>
+  
+    <input type="submit" value="Submit" onclick="thanks for the review!">
+  </form>
+</div>
+
+</body>
+</html>
+
